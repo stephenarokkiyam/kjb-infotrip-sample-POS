@@ -1,0 +1,551 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+  background-color: rgba(128, 128, 128, 0.151);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none ;
+}
+
+/* Header Sectionn */
+
+.header {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.432);
+  background-color: #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  margin: 0;
+  padding: 0 10px;
+  z-index: 999;
+}
+
+.header .hamburger {
+  align-self: center;
+  display: none;
+}
+
+.header .header-logo {
+  width: 250px;
+  align-self: center;
+}
+
+.header .header-search {
+  position: relative;
+  width: 300px;
+}
+
+.header .header-search input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.137);
+  color: #121933;
+}
+
+.header .header-search i {
+  position: absolute;
+  right: 150px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #121933;
+}
+
+.header .header-select-table {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .header-select-table div:last-child {
+  background-color: red;
+  color: #ffff;
+  padding: 0 10px;
+  height:40px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.header .header-select-table div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header .header-select-table .header-select-table-i {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .header-select-table .header-select-table-i:last-child {
+  gap: 20px;
+}
+
+/* main content */
+
+main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+/* nav-bar section */
+
+.nav {
+  background-color: #ffff;
+  height: 90vh;
+  position: fixed;
+  top: 10vh;
+  border-right: 2px solid rgba(128, 128, 128, 0.432);
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-around;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+}
+.nav ul li  {
+  color: rgba(128, 128, 128, 0.767);
+  display: block;
+  padding: 10px 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav ul li a{
+  color: rgba(128, 128, 128, 0.767);
+}
+
+.nav ul li i {
+  display: block;
+  text-align: center;
+}
+
+.nav ul li a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.nav .active-link {
+  color: red;
+  background-color: rgba(128, 128, 128, 0.151);
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.nav .active-link a{
+  color: red;
+}
+/* main content style */
+
+main .Products-list {
+  width: 60vw;
+  padding: 0 10px;
+  position: relative;
+  left: 10vw;
+  top: 10vh;
+  margin-bottom: 15vh;
+}
+
+main .Products-list .food-type {
+  width: 60vw;
+  /* background-color: #FFFF; */
+}
+
+main .Products-list .food-type ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffff;
+  margin: 5px 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+main .Products-list .food-type ul li {
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+main .Products-list .food-type .active-link {
+  color: red;
+  background-color: rgba(128, 128, 128, 0.151);
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+main .Products-list .food-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin: 10px;
+}
+
+main .Products-list .food-lists .food {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main .Products-list .food-lists .food:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
+}
+
+main .Products-list .food-lists .food img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Products-list .food-lists .food p {
+  margin: 10px 0;
+}
+
+main .Products-list .food-lists .food p:nth-child(3) {
+  background-color: darkgreen;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 5px;
+  color: #ffff;
+}
+
+.Products-list .food-lists .food button {
+  font-family: "Courier New", Courier, monospace;
+  background-color: darkorange;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Products-list .food-lists .food button:hover {
+  background-color: #ff7700;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Products-list .food-lists .food button:active {
+  transform: scale(0.98);
+}
+
+main .ordered-items {
+  position: fixed;
+  background-color: #ffff;
+  width: 25vw;
+  top: 10vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+}
+
+.ordered-items .ordered-items-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.432);
+}
+
+.ordered-items .ordered-items-nav .add-customer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ordered-items .ordered-items-nav .add-customer a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ordered-items .ordered-items-nav .add-customer i {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.432);
+}
+
+.ordered-items .ordered-items-nav .add-customer i:hover {
+  background-color: red;
+  color: #ffff;
+}
+
+.ordered-items .order-proceed {
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.ordered-items .order-proceed .order-proceed-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.ordered-items .order-proceed .order-proceed-top div:last-child {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  color: orange;
+  align-items: center;
+}
+
+.ordered-items .order-proceed div:last-child p {
+  padding-right: 10px;
+}
+
+.ordered-items .order-proceed .total-amount {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.ordered-items .order-proceed .total-amount div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ordered-items .order-proceed .total-amount div:last-child p:first-child {
+  font-weight: 700;
+}
+
+.ordered-items .order-proceed .total-amount div p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.ordered-items .order-proceed .total-amount div p:last-child {
+  margin-right: 20px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.ordered-items .order-proceed .pay-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ordered-items .order-proceed .pay-button button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+
+.ordered-items .order-proceed .pay-button button:first-child {
+  background-color: red;
+}
+
+.ordered-items .order-proceed .pay-button button:last-child {
+  background-color: green;
+}
+
+.ordered-items .order-proceed .pay-button button:first-child:hover {
+  background-color: darkred;
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+
+.ordered-items .order-proceed .pay-button button:last-child:hover {
+  background-color: darkgreen;
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+
+
+/* media queries */
+
+@media (max-width: 1054px) {
+  body {
+    font-size: 90%;
+}
+.ordered-items .order-proceed .pay-button {
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.ordered-items .order-proceed .pay-button button {
+ margin-top: 10px;
+}
+
+.ordered-items .order-proceed .order-proceed-top div:last-child {
+  flex-direction: column;
+  align-items: end;
+}
+
+.ordered-items .order-proceed .order-proceed-top div:last-child p {
+  margin: 5px;
+  text-align: right;
+}
+
+}
+
+@media(max-width:970px){
+  .ordered-items .ordered-items-nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width:903px){
+
+  .nav{
+    display: none;
+  }
+
+  main .Products-list {
+    width: 95vw;
+    left:0;
+  }
+
+  main .Products-list .food-type {
+    width: 95vw;
+  }
+
+  main .ordered-items {
+   bottom: 0;
+   top:70vh;
+   position: fixed;
+  background-color: #ffff;
+  width: 100vw;
+  height:30vh;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  right: 0;
+  }
+
+  .ordered-items .ordered-items-nav {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+  }
+
+  .ordered-items .order-proceed{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .ordered-items .ordered-items-nav .add-customer:first-child {
+    display:none;
+  }
+
+  .ordered-items .order-proceed .order-proceed-top{
+    padding-left: 5px;
+  }
+
+  .ordered-items .order-proceed .order-proceed-top div:last-child {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+  }
+
+  .ordered-items .ordered-items-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .ordered-items .order-proceed .pay-button {
+    flex-direction: column;
+    position: absolute;
+    left:0;
+    bottom:10px;
+    text-align: center;
+    margin: 0 20px;
+    padding-bottom: 10px;
+  }
+
+  .ordered-items .order-proceed .pay-button button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    cursor: pointer;
+  }
+
+  .header .hamburger {
+    display: block;
+  }
+
+  .nav ul {
+    width: 30vw;
+  }
+
+  .header .header-select-table {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .header .header-search i {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 80%;
+  }
+
+  .ordered-items .order-proceed .pay-button button span{
+    display: none;
+  }
+}

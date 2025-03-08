@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJB Infotrip - Sample POS UI</title>
+    <link rel="shortcut icon" href="assets/common_images/logo-circle.png" type="text/image">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA8pK6tFf3wH93zY8Xbe5IoS69hE23wcc8AY1cU2f3EXXXpFjeK01nZtE2I1F" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section>
+        <header class="header">
+            <div id="hamburger" class="hamburger">
+                <a  href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="header-logo"><img src="assets/common_images/Food Hub.png"></div>
+            <div class="header-search"><input type="search" placeholder="Search Products...">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="header-select-table">
+                <div class="header-select-table-i">
+                    <i class="fa fa-sync-alt"></i>
+                    <i class="fa fa-wifi"></i>
+                </div>
+                <div class="header-select-table-i">
+                    <i class="fa fa-qrcode"></i>
+                    <p>select table</p>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <main>
+            <nav id="nav" class="nav">
+                <ul>
+                    <li class="active-link">
+                        <i class="fa fa-home"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-users"></i>
+                        <a href="#">Customers</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-table"></i>
+                        <a href="#">Tables</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-cash-register"></i>
+                        <a href="#">Cashier</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-shopping-cart"></i>
+                        <a href="#">Orders</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-chart-line"></i>
+                        <a href="#">Reports</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-cog"></i>
+                        <a href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="Products-list">
+                <div class="food-type">
+                    <ul>
+                        <li>Starters</li>
+                        <li>Breakfast</li>
+                        <li class="active-link">Lunch</li>
+                        <li>Supper</li>
+                        <li>Deserts</li>
+                        <li>Beverages</li>
+                    </ul>
+                </div>
+                <div class="food-lists">
+                    <div class="food">
+                        <img src="https://farm8.staticflickr.com/7890/46966041001_2590047365_o_d.jpg">
+                        <p>Chicken Chettinad</p>
+                        <p>INR 250.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.kannammacooks.com/wp-content/uploads/buhari-hotel-chennai-chicken-biryani-recipe-1-4.jpg">
+                        <p>Biryani</p>
+                        <p>INR 170.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://traditionallymodernfood.com/wp-content/uploads/2025/01/hotel-style-sambar-sadam-2-scaled.jpeg">
+                        <p>Sambar Satham</p>
+                        <p>INR 75.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.indianveggiedelight.com/wp-content/uploads/2022/08/curd-rice-featured.jpg">
+                        <p>Curd Rice</p>
+                        <p>INR 60.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.kannammacooks.com/wp-content/uploads/masala-fish-fry-recipe-ayala-meen-Mackerel-fry-8.jpg">
+                        <p>Fish Fry</p>
+                        <p>INR 180.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="food">
+                        <img
+                            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/chicken-fry-recipe.jpg">
+                        <p>Chicken Fry</p>
+                        <p>INR 250.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.lemonblossoms.com/wp-content/uploads/2019/11/How-To-Cook-White-Rice-6-500x500.jpg">
+                        <p>White Rice</p>
+                        <p>INR 100.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJk3IXI1H0EW4FL3S5ociFcLP1pdCN0icZQ&s">
+                        <p>Rasam Satham</p>
+                        <p>INR 75.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.indianveggiedelight.com/wp-content/uploads/2023/03/lemon-rice-stovetop-featured.jpg">
+                        <p>Lemon Rice</p>
+                        <p>INR 60.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_7mct1A792qL8zopviKQXLsZdtNxOf28HFw&s">
+                        <p>Grilled Chicken</p>
+                        <p>INR 250.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="food">
+                        <img
+                            src="https://lifeloveandgoodfood.com/wp-content/uploads/2023/03/chicken_fried_rice00032a-1200x1200-1.jpg">
+                        <p>Chicken Friedrice</p>
+                        <p>INR 250.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.bigfattummy.com/wp-content/uploads/2017/09/Prawn-Egg-Fried-Rice-07-800x800.jpg">
+                        <p>Prawn Friedrice</p>
+                        <p>INR 170.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/veg-noodles-vegetable-noodles-recipe.jpg">
+                        <p>Veg Noodles</p>
+                        <p>INR 165.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img src="https://static.toiimg.com/photo/75356205.cms">
+                        <p>Chicken Noodles</p>
+                        <p>INR 185.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img src="https://www.whiskaffair.com/wp-content/uploads/2014/07/Chicken-Samosa-1-3.jpg">
+                        <p>Chicken Samosa</p>
+                        <p>INR 50.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLHfpaL5Fyx6kKNUI5z_pjtj2-g78nmzlqw&s">
+                        <p>Chicken Gravy</p>
+                        <p>INR 270.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ordered-items">
+                <div class="ordered-items-nav">
+                    <div class="add-customer">
+                        <a>
+                            <i class="fa fa-plus"></i>
+                            <p>Add Customer</p>
+                        </a>
+                    </div>
+                    <div class="add-customer">
+                        <i class="fa fa-plus"></i>
+                        <a><i class="fa fa-check-square"></i></a>
+                        <a><i class="fa fa-sync-alt"></i></a>
+                    </div>
+                </div>
+                <div></div>
+                <div class="order-proceed">
+                    <div class="order-proceed-top">
+                        <div>
+                            <p>Add</p>
+                        </div>
+                        <div>
+                            <p>Discount</p>
+                            <p>Coupen Code</p>
+                            <p>Note</p>
+                        </div>
+                    </div>
+                    <div class="total-amount">
+                        <div>
+                            <p>Subtotal</p>
+                            <p>INR 1200.00</p>
+                        </div>
+                        <div>
+                            <p>Tax</p>
+                            <p>INR 100.00</p>
+                        </div>
+                        <div>
+                            <p>Payable Amount</p>
+                            <p>INR 1300.00</p>
+                        </div>
+                    </div>
+                    <div class="pay-button">
+                        <button><i class="fa fa-pause-circle"></i> <span>Hold Order</span></button>
+                        <button><i class="fa fa-check-circle"></i> <span>Proceed</span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-TOpL+45XUeq6WxHkpnepPHiPfXhBS9yHY8S4jNEF8Jn5XaT+VrEnA6iJlp5Lz2x"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
